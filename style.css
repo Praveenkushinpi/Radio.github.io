@@ -1,0 +1,307 @@
+/* General Reset */
+
+body {
+
+  margin: 0;
+
+  background-color: #4a4f77; /* Deep Retro Blue */
+
+  font-family: "Courier New", monospace;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+}
+
+/* Container for all windows */
+
+.player-container {
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+}
+
+/* Window Frame */
+
+.window {
+
+  background-color: #f3bfcf; /* Pastel Pink */
+
+  border: 3px solid #333;
+
+  box-shadow: 4px 4px 0 #111;
+
+  width: 300px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  margin: 10px;
+
+}
+
+.title-bar {
+
+  background: linear-gradient(to right, #333, #111);
+
+  color: #f3bfcf;
+
+  padding: 5px;
+
+  font-size: 14px;
+
+  text-align: left;
+
+}
+
+.window-title {
+
+  margin-left: 8px;
+
+}
+
+/* Player Body */
+
+.player-body {
+
+  padding: 15px;
+
+}
+
+/* Visualizer */
+
+.visualizer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  height: 40px;
+
+  margin: 10px 0;
+
+}
+
+.bar {
+
+  width: 10px;
+
+  background-color: #000;
+
+  animation: bounce 1.2s infinite alternate;
+
+}
+
+.bar:nth-child(1) {
+
+  animation-delay: 0.1s;
+
+}
+
+.bar:nth-child(2) {
+
+  animation-delay: 0.3s;
+
+}
+
+.bar:nth-child(3) {
+
+  animation-delay: 0.5s;
+
+}
+
+.bar:nth-child(4) {
+
+  animation-delay: 0.7s;
+
+}
+
+.bar:nth-child(5) {
+
+  animation-delay: 0.9s;
+
+}
+
+/* Animation for Bars */
+
+@keyframes bounce {
+
+  from {
+
+    height: 10px;
+
+  }
+
+  to {
+
+    height: 40px;
+
+  }
+
+}
+
+/* Controls */
+
+.controls {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  margin: 15px 0;
+
+}
+
+.controls button {
+
+  background-color: #f3bfcf;
+
+  border: 2px solid #111;
+
+  color: #333;
+
+  font-size: 20px;
+
+  width: 40px;
+
+  height: 40px;
+
+  cursor: pointer;
+
+}
+
+.controls button:hover {
+
+  background-color: #333;
+
+  color: #f3bfcf;
+
+}
+
+/* Track Info */
+
+.track-info {
+
+  background-color: #333;
+
+  color: #f3bfcf;
+
+  padding: 5px;
+
+  font-size: 14px;
+
+  margin-top: 10px;
+
+}
+
+/* Cover Window Styles */
+
+.cover-window {
+
+  background-color: #f3bfcf;
+
+  border: 3px solid #333;
+
+  box-shadow: 4px 4px 0 #111;
+
+  width: 300px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+}
+
+.cover-body {
+
+  padding: 20px;
+
+}
+
+.cover-body img {
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 10px;
+
+}
+
+/* Next Track Window */
+
+.next-track-window {
+
+  background-color: #f3bfcf;
+
+  border: 3px solid #333;
+
+  box-shadow: 4px 4px 0 #111;
+
+  width: 300px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+}
+
+.next-track-body {
+
+  padding: 20px;
+
+}
+
+#next-track-name {
+
+  font-size: 16px;
+
+  color: #333;
+
+}
+
+/* Website Name Window */
+
+.website-name-window {
+
+  background-color: #f3bfcf;
+
+  border: 3px solid #333;
+
+  box-shadow: 4px 4px 0 #111;
+
+  width: 300px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+}
+
+.website-body {
+
+  padding: 30px;
+
+}
+
+.website-body h1 {
+
+  color: #333;
+
+  font-size: 24px;
+
+}
